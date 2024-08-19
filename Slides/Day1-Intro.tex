@@ -1,0 +1,60 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Copenhagen}
+%% Remove draft for real article, put twocolumn for two columns
+\usetheme{metropolis}
+\usepackage{multicol}
+\usepackage[style=british]{csquotes}
+
+\def\signed #1{{\leavevmode\unskip\nobreak\hfil\penalty50\hskip1em
+  \hbox{}\nobreak\hfill #1%
+  \parfillskip=0pt \finalhyphendemerits=0 \endgraf}}
+
+\newsavebox\mybox
+\newenvironment{aquote}[1]
+  {\savebox\mybox{#1}\begin{quote}\openautoquote\hspace*{-.7ex}}
+  {\unskip\closeautoquote\vspace*{1mm}\signed{\usebox\mybox}\end{quote}}
+
+\usepackage[utf8]{inputenc}
+\newtheorem*{question}{Question}
+
+\newcommand{\vectorproj}[2][]{\mathrm{proj}_{\vect{#1}}\vect{#2}}
+\newcommand{\vectorcomp}[2][]{\mathrm{comp}_{\vect{#1}}\vect{#2}}
+\newcommand{\vect}{\mathbf}
+\newcommand{\R}{\mathbb{R}}
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+\title{ Calculus  \\ Applications of change of variables }
+\date{Fall 2024}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{frame}
+	\frametitle{Introduction}
+	\begin{itemize}
+		\item Instructor: Son Van
+		\item Syllabus
+		\item Why Calculus?
+		\item Review of functions (Worksheet)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why Calculus}
+	\begin{itemize}
+		\item Pixar TED: \url{https://www.youtube.com/watch?v=Z1R1z9ipFnM}
+		\item Pixar TED, 2: \url{https://www.youtube.com/watch?v=_IZMVMf4NQ0}
+		\item Math and Animations (explanation): \url{https://youtu.be/mX0NB9IyYpU?si=EYWYSLdbtsnRYSaJ&t=476}
+		\item Fluxed Animated Boundary Method: \url{https://www.youtube.com/watch?v=xUbIq90I8OI}
+	\end{itemize}
+
+
+\end{frame}
+
+
+
+\end{document}
+
