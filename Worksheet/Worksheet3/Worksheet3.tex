@@ -1,0 +1,211 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 3 }
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Please make sure you have a graphical example for each of the definitions below.
+
+\begin{definition}
+	Let \( f(x) \) be a function. If any of the following conditions hold, then the line \( x = a \) is a \textbf{vertical} asymptote of \( f(x) \).
+
+	\[
+		\lim_{x \to a^-} f(x) = +\infty \text{ or } -\infty
+	\]
+	\[
+		\lim_{x \to a^+} f(x) = +\infty \text{ or } -\infty
+	\]
+	\[
+		\text{or}
+	\]
+	\[
+		\lim_{x \to a} f(x) = +\infty \text{ or } -\infty
+	\]
+\end{definition}
+
+
+\begin{question}
+	Find all the vertical asymptotes of the following function
+	\begin{equation*}
+		f(x) = \frac{x}{(x-1)^2 (x-4)} \,.
+	\end{equation*}
+	What are the behaviors  of the function on the left and right of each asymptote.
+\end{question}
+\vspace{5cm}
+
+
+\begin{theorem}[Squeeze Theorem]
+	Let \( f(x) \), \( g(x) \), and \( h(x) \) be functions defined for all \( x \neq a \) over an open interval containing \( a \). Suppose:
+
+	\[
+		f(x) \leq g(x) \leq h(x) \quad \text{for all } x \neq a \text{ in an open interval containing } a
+	\]
+
+	and
+
+	\[
+		\lim_{x \to a} f(x) = L = \lim_{x \to a} h(x)
+	\]
+
+	where \( L \) is a real number. Then,
+
+	\[
+		\lim_{x \to a} g(x) = L.
+	\]
+\end{theorem}
+
+\begin{theorem}
+	The following limits are true.
+	\begin{equation*}
+		\lim_{\theta \to a} \sin(\theta) = \sin(a) \,,
+	\end{equation*}
+	and
+	\begin{equation*}
+		\lim_{\theta \to a} \cos(\theta) = \cos(a) \,,
+	\end{equation*}
+\end{theorem}
+\newpage
+
+\begin{question}
+	Evaluate the following limits
+	\begin{enumerate}
+		\item $\displaystyle \lim_{x\to 1} \frac{ x^3 + 3x^2 + 5}{4 - 7x}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x\to 3} \ln e^{3x}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 6} \frac{3x - 18}{2x - 12}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{\theta \to \pi} \frac{\sin \theta}{\tan \theta}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to \pi} \frac{\sqrt{x + 4} - 1}{x + 3}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{h \to 0} \frac{\frac{1}{a + h} - \frac{1}{a}}{h}$
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+
+\begin{question}
+	Evaluate the following one-sided limits
+	\begin{enumerate}
+		\item $\displaystyle \lim_{x \to 1^+} \frac{2x^2 + 7x -4}{x^2 + x - 2}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 1^-} \frac{2x^2 + 7x -4}{x^2 + x - 2}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 2^+} \frac{2x^2 + 7x -4}{x^2 + x - 2}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 2^-} \frac{2x^2 + 7x -4}{x^2 + x - 2}$
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+\begin{question}
+	Suppose
+	\begin{equation*}
+		2x - 1 \leq g(x) \leq x^2 - 2x + 3 \,.
+	\end{equation*}
+	True or False.
+	\begin{equation*}
+		\lim_{x\to 2} g(x) = 0 \,.
+	\end{equation*}
+\end{question}
+
+\begin{definition}
+	A function $f(x)$ is continuous at a point $a$ if and only if the following conditions are satisfied:
+	\begin{enumerate}
+		\item $f(a)$ is defined,
+		\item $\lim_{x\to a} f(x) = f(a)$.
+	\end{enumerate}
+	A function is discontinuous at a point $a$ if it fails to be continuous at $a$.
+\end{definition}
+
+
+\begin{definition}
+	If \( f(x) \) is discontinuous at \( a \), then
+	\begin{enumerate}
+		\item \( f \) has a \textbf{removable discontinuity} at \( a \) if \( \lim_{x \to a} f(x) \) exists. 		\item \( f \) has a \textbf{jump discontinuity} at \( a \) if \( \lim_{x \to a^-} f(x) \) and \( \lim_{x \to a^+} f(x) \) both exist, but \( \lim_{x \to a^-} f(x) \neq \lim_{x \to a^+} f(x) \).
+		\item \( f \) has an \textbf{infinite discontinuity} at \( a \) if \( \lim_{x \to a^-} f(x) = \pm \infty \) and/or \( \lim_{x \to a^+} f(x) = \pm \infty \).
+	\end{enumerate}
+\end{definition}
+
+
+\begin{question}
+	Find all the discontinuous points in Questions 3 and 4.
+	Which function do you think can be mofified slightly at a few points
+	to become continuous?
+\end{question}
+
+
+\begin{question}
+	Determine whether the function is continuous at a given point.
+	\begin{enumerate}
+		\item $h(\theta) = \frac{\sin \theta - \cos \theta }{\tan \theta}$, $ \theta = \pi$.
+		      \vspace{5cm}
+		\item $f(x) = \begin{cases}
+				      x^2 - e^x , & x< 0        \\
+				      x - 1 ,     & x \geq 0\,,
+			      \end{cases}$
+		      $x = 0 $.
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+\begin{question}
+	Find the value of $k$ so that the following function is continuous
+	\begin{equation*}
+		f(x)
+		=
+		\begin{dcases}
+			3x + 2, & x < k \,,           \\
+			2x - 3, & k \leq x \leq 8 \,.
+		\end{dcases}
+	\end{equation*}
+	\vspace{5cm}
+\end{question}
+
+\begin{theorem}[Intermediate Value Theorem]
+	Let $f$ be continuous over a closed, bounded interval $[a,b]$.
+	If $z$ is any real number between $f(a)$ and $f(b)$, then there exists
+	a number $c$ in $[a,b]$ so that $f(c) = z$.
+\end{theorem}
+
+
+\begin{question}
+	\begin{enumerate}
+		\item Show that $f(x) = x^3 - x^2 -3x + 1$ has at least one zero over $[0,1]$.
+		      \vspace{5cm}
+		\item Show that $f(x) = x - \cos x$ has at least one zero.
+	\end{enumerate}
+\end{question}
+
+
+
+
+
+
+
+\printbibliography
+
+
+\end{document}
