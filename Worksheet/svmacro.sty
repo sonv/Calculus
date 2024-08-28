@@ -126,7 +126,7 @@
 	% Only do these if no theorem environment is present.
 	\theoremstyle{plain}
 	\ifSV@numwithin
-		\newtheorem{theorem}{Theorem}[section]
+		\newtheorem{theorem}{Theorem}
 	\else
 		\newtheorem{theorem}{Theorem}
 	\fi
@@ -143,7 +143,7 @@
 	\newtheorem*{corollary*}{Corollary}
 
 	\theoremstyle{definition}
-	\newtheorem{definition}[theorem]{Definition}
+	\newtheorem{definition}{Definition}
 
 	\theoremstyle{remark}
 	\newtheorem{remark}[theorem]{Remark}

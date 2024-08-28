@@ -1,0 +1,68 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 3 }
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\begin{theorem}[Squeeze Theorem]
+	Let \( f(x) \), \( g(x) \), and \( h(x) \) be functions defined for all \( x \neq a \) over an open interval containing \( a \). Suppose:
+
+	\[
+		f(x) \leq g(x) \leq h(x) \quad \text{for all } x \neq a \text{ in an open interval containing } a
+	\]
+
+	and
+
+	\[
+		\lim_{x \to a} f(x) = L = \lim_{x \to a} h(x)
+	\]
+
+	where \( L \) is a real number. Then,
+
+	\[
+		\lim_{x \to a} g(x) = L.
+	\]
+\end{theorem}
+
+\begin{definition}
+	Let \( f(x) \) be a function. If any of the following conditions hold, then the line \( x = a \) is a \textbf{vertical} asymptote of \( f(x) \).
+
+	\[
+		\lim_{x \to a^-} f(x) = +\infty \text{ or } -\infty
+	\]
+	\[
+		\lim_{x \to a^+} f(x) = +\infty \text{ or } -\infty
+	\]
+	\[
+		\text{or}
+	\]
+	\[
+		\lim_{x \to a} f(x) = +\infty \text{ or } -\infty
+	\]
+\end{definition}
+\printbibliography
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}
