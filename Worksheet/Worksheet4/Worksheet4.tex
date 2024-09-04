@@ -1,0 +1,99 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 4}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Please make sure you have a graphical example for each of the definitions below.
+
+\begin{theorem}[Composite Function Theorem]
+	If $f(x)$ is continuous at $L$ and $\lim_{x \to a} g(x) = L$, then
+	\begin{equation*}
+		\lim_{x\to a} f(g(x)) = f(\lim_{x\to a} g(x)) = f(L) \,.
+	\end{equation*}
+\end{theorem}
+
+\begin{question}
+	Find the limits:
+	\begin{enumerate}
+		\item $\lim_{x \to \pi } \sin(x + \sin x)$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 1} \ln\left( \frac{5 - x^2}{1 + x} \right)$
+		      \vspace{5cm}
+	\end{enumerate}
+
+\end{question}
+
+
+
+\begin{theorem}[Intermediate Value Theorem]
+	Let $f$ be continuous over a closed, bounded interval $[a,b]$.
+	If $z$ is any real number between $f(a)$ and $f(b)$, then there exists
+	a number $c$ in $[a,b]$ so that $f(c) = z$.
+\end{theorem}
+
+
+\begin{question}
+	\begin{enumerate}
+		\item Show that there is a solution to the equation
+		      $$x^3 + 5x^2 + 3x - 9 = 0$$
+		      \vspace{5cm}
+		\item Show that $f(x) = x^3 - x^2 -3x + 1$ has at least one zero over $[0,1]$.
+		      \vspace{5cm}
+		\item Show that $f(x) = x - \cos x$ has at least one zero.
+	\end{enumerate}
+\end{question}
+
+
+\begin{question}
+	Do the graphs of $f(x) = 2^x$ and $g(x) = x^3$ cross at some point?
+\end{question}
+
+
+\newpage
+
+
+\begin{question}
+	A ball is thrown into the air and the vertical position is given by
+	$$ x(t) = -4.9t^2 + 25t + 5 .$$
+	Use the Intermediate Value Theorem to show that the ball must land on the ground sometime between 5 sec and 6 sec after the throw.
+\end{question}
+
+
+\vspace{5cm}
+
+\begin{question}
+	A Tibetan monk leaves the monastery at 7:00 am and
+	takes his usual path to the top of the mountain, arriving at
+	7:00 pm. The following morning, he starts at 7:00 am at the
+	top and takes the same path back, arriving at the monastery
+	at 7:00 pm. Use the Intermediate Value Theorem to show
+	that there is a point on the path that the monk will cross at
+	exactly the same time of day on both days.
+\end{question}
+
+\printbibliography
+
+
+\end{document}
