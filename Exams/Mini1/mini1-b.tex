@@ -1,0 +1,69 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Calculus }
+\author{  Mini Exam 1 \\ Second Section \\ \vspace{1cm} Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+\\ \vspace{1cm} ID: \_\_\_\_\_\_\_\_\_ \\ \vspace{1cm} Score: \_\_\_\_\_\_/ 80}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+RULES:
+\begin{itemize}
+	\item You have 30 minutes to complete the exam.
+	\item There are 3 questions and 80 points in total.
+	\item You can use a non-graphing calculator.
+	\item If you need to go to the restroom, please turn in your cellphone before.
+\end{itemize}
+
+\pagebreak
+
+\begin{problem}[30 points]
+How many kinds of discontinuity of a function $f(x)$ at a point $a$?
+For each kind of discontinuity, give an example.
+\end{problem}
+\newpage
+
+\begin{problem}[30 points]
+Do the limits below exist? Give reason.
+\begin{enumerate}
+	\item $\displaystyle \lim_{x \to 1} \frac{x^2 -4}{x-1} $
+	      \vspace{8cm}
+	\item  $\displaystyle \lim_{x \to 2} f(x)$
+	      where $2x -1 \leq f(x) \leq x^2 -2x + 3$.
+\end{enumerate}
+\end{problem}
+
+\newpage
+\begin{problem}[20 points] Consider
+\begin{equation*}
+	f(x) = \begin{dcases}
+		(x + k)^3 \,,  & x<0         \\
+		2 + \sin x \,, & x\geq 0 \,.
+	\end{dcases}
+\end{equation*}
+Find $k$ to make $f(x)$ continuous at $x = 0$.
+
+\end{problem}
+
+
+\printbibliography
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}

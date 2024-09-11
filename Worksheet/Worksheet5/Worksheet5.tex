@@ -1,0 +1,103 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 4}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{question}
+	What is the definition of a tangent line?
+	Give a graphical representaiton.
+\end{question}
+
+\begin{question}
+	Find the tangent line of the following:
+	\begin{enumerate}
+		\item $f(x) = \sqrt{x - 2} $ at $x = 6$
+		      \vspace{5cm}
+		\item $f(x) = 3x^2 - x + 2$ at $x = 1$
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+\begin{question}
+	What is the definition derivative of a function at a point?
+	What is it, graphically?
+\end{question}
+\vspace{5cm}
+
+\begin{question}
+	Given the limit, find the function $f(x)$ and the point $a$ so that the limit
+	is the derivative of $f(x)$ at $x=a$.
+
+	\begin{enumerate}
+		\item $\displaystyle \lim_{h\to 0} \frac{ (1 + h)^{2/3} -1}{h}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{h\to 0} \frac{ \cos(\pi + h) + 1}{h}$
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+
+
+\begin{question}
+	Sketch the graphs of the derivatives of the following functions given by the graphs below.
+	\begin{enumerate}
+		\item
+		      \begin{figure}[h!]
+			      \includegraphics{figures/1.jpeg}
+		      \end{figure}
+
+		\item \begin{figure}[h!]
+			      \includegraphics{figures/2.jpeg}
+		      \end{figure}
+		      \vspace{2cm}
+
+		\item
+		      \begin{figure}[h!]
+			      \includegraphics{figures/3.jpeg}
+		      \end{figure}
+	\end{enumerate}
+\end{question}
+
+
+\begin{question}
+	Show that
+	\begin{enumerate}
+		\item If $\displaystyle f(x) = x^n$, then $f'(x) = n x^{n-1}$
+		      \vspace{5cm}
+		\item $ (f'(x) + g(x))' = f'(x) + g'(x)$
+		      \vspace{5cm}
+		\item $ (f'(x) - g(x))' = f'(x) - g'(x)$
+		      \vspace{5cm}
+		\item  $\displaystyle (f(x)g(x))'  = f'(x) g(x) + f(x) g'(x)$
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+
+\printbibliography
+
+
+\end{document}

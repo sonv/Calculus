@@ -1,0 +1,76 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Calculus }
+\author{  Mini Exam 1 \\ First Section \\ \vspace{1cm} Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+\\ \vspace{1cm} ID: \_\_\_\_\_\_\_\_\_ \\ \vspace{1cm} Score: \_\_\_\_\_\_/ 80}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+RULES:
+\begin{itemize}
+	\item You have 30 minutes to complete the exam.
+	\item There are 3 questions and 80 points in total.
+	\item You can use a non-graphing calculator.
+	\item If you need to go to the restroom, please turn in your cellphone before.
+\end{itemize}
+
+\newpage
+
+\begin{problem}[30 points]
+\begin{enumerate}
+	\item (10 points) State the mean value theorem (you can use your own words)
+	      \vspace{8cm}
+	\item (20 points) Show that the equation $e^x - \sin x = 0$ has a solution between $-\frac{\pi}2$ and $\frac\pi2$.
+\end{enumerate}
+\end{problem}
+
+\pagebreak
+
+\begin{problem}[30 points]
+Do the limits below exist? Give reason.
+\begin{enumerate}
+	\item $\displaystyle \lim_{x \to 0} x \sin\left( \frac{1}{x} \right)$
+	      \vspace{5cm}
+	\item $\displaystyle \lim_{x \to 1} \frac{x^2 -4}{x-1} $
+	      \vspace{5cm}
+	\item $\displaystyle \lim_{x \to 2} \frac{x^2 - 4}{x-2}$
+	      \vspace{5cm}
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+\begin{problem}[20 points] Consider
+\begin{equation*}
+	f(x) = \begin{dcases}
+		x + k \,,  & x<0         \\
+		\cos x \,, & x\geq 0 \,.
+	\end{dcases}
+\end{equation*}
+Find $k$ to make $f(x)$ continuous at $x = 0$.
+
+\end{problem}
+
+
+\printbibliography
+%\bibliography{refs}
+%\bibliographystyle{halpha-abbrv}
+
+
+\end{document}
