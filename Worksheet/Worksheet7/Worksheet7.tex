@@ -1,0 +1,106 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 6}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Useful definitions:
+
+\begin{enumerate}
+	\item $\displaystyle \tan x = \frac{\sin x}{\cos x}$
+	\item $\displaystyle \cot x = \frac{\cos x}{\sin x}$
+	\item $\displaystyle \csc x = \frac{1}{\sin x}$
+	\item $\displaystyle \sec x = \frac{1}{\cos x}$
+\end{enumerate}
+
+
+
+
+\begin{question}
+	\begin{enumerate}
+		\item Show the chain rule:
+		      \begin{equation*}
+			      \frac{d}{dx} f(g(x)) = f'(g(x)) g'(x) \,.
+		      \end{equation*}
+		      \vspace{7cm}
+
+		\item Apply the chain rule to show the quotient rule:
+		      \begin{equation*}
+			      \left( \frac{f(x)}{g(x)}  \right)' = \frac{ f'(x) g(x) - f(x) g'(x)}{g(x)^2}
+		      \end{equation*}
+		      \vspace{5cm}
+
+
+		\item Apply the above rules when
+		      $$f(x) = x^3 -\pi x$$
+		      and
+		      $$ g(x) = \frac{1}{x^2 + 3} $$
+		      \vspace{5cm}
+
+	\end{enumerate}
+\end{question}
+\newpage
+
+\begin{question}
+	For this part, you should review \url{https://openstax.org/books/calculus-volume-1/pages/2-3-the-limit-laws}
+	for the limits $\lim_{\theta \to 0} \frac{\sin \theta }{\theta} = 1$
+	and
+	$\lim_{\theta \to 0} \frac{\cos \theta - 1}{\theta} = 0$.
+
+	Show that
+	\begin{enumerate}
+		\item $(\sin x)' = \cos x$
+
+		      ( Hint: $\sin(x + y) = \sin x \cos y + \sin y \cos x$)
+		      \vspace{5cm}
+
+		\item $(\cos x)' = - \sin x$
+
+		      ( Hint: $\cos(x + y) = \cos x \cos y - \sin x \sin y$)
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+
+
+\begin{question}
+	Use all the rules above to find
+	\begin{enumerate}
+		\item $\displaystyle (\cot x)'$
+		      \vspace{5cm}
+		\item $\displaystyle (\tan x)'$
+		      \vspace{5cm}
+		\item $\displaystyle (\csc x)'$
+		      \vspace{5cm}
+		\item $\displaystyle (\sec x)'$
+		      \vspace{5cm}
+	\end{enumerate}
+
+\end{question}
+
+
+\printbibliography
+
+
+\end{document}
