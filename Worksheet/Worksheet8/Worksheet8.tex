@@ -1,0 +1,84 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 8}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{question}
+	Finding the tangent curve to the graph at a given point
+	\begin{enumerate}
+		\item $ x^2 + y^2 = 4$ at $(2,0)$
+		      \vspace{5cm}
+		\item $x^4y - xy^3 = -2$ at $(-1,-1)$
+		      \vspace{5cm}
+		\item $ \tan (xy) = y$ at $(\pi/4, 1)$
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+\begin{question}
+	\begin{enumerate}
+		\item The biomial theorem says that
+		      \begin{equation*}
+			      \begin{aligned}
+				      (1 + a)^n
+				       & = 1 + {n \choose 1} a + {n \choose 2} a^2 + \dots + {n \choose n-1} a^{n-1} + {n \choose n} a^n \\
+				       & = 1 + n a + {n \choose 2} a^2 + \dots + n a^{n-1} +  a^n \,.
+			      \end{aligned}
+		      \end{equation*}
+		      One definition of the number $e$ is that
+		      \begin{equation*}
+			      e = \lim_{n\to \infty} \left(1 + \frac{1}{n}\right)^n
+		      \end{equation*}
+		      Show that
+		      \begin{equation*}
+			      (e^x)' = e^x \,.
+		      \end{equation*}
+	\end{enumerate}
+
+\end{question}
+
+\newpage
+
+\begin{question}
+	\begin{enumerate}
+		\item
+		      Recall that the natural log function is the inverse function of $e^x$.
+		      Use this fact and the chain rule to show that
+		      \begin{equation*}
+			      (\ln x)' = \frac{1}{x} \,.
+		      \end{equation*}
+		      \vspace{5cm}
+		\item Find a formula for $(a^x)'$ where $a$ is a real number.
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+
+
+\begin{question}
+	Find the equation of the tangent line to the graph
+	$$ f(x) = x 5^x $$ at point $x = 1$.
+\end{question}
+\end{document}

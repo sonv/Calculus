@@ -1,0 +1,63 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 9}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{question}
+	\begin{enumerate}
+		\item Find a formula for $(a^x)'$ where $a$ is a real number.
+		      \vspace{5cm}
+		\item Find a formula for $(x^x)'$
+		      \vspace{5cm}
+	\end{enumerate}
+
+
+
+\end{question}
+
+
+\begin{question}
+	State all the cases when you can apply L'Hospital rule.
+	What is the rule?
+\end{question}
+
+\begin{question}
+	Evaluate the following
+	\begin{enumerate}
+		\item $\displaystyle \lim_{x\to 0} \left( \frac{1}{x} - \frac{1}{\sin x}  \right)$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 0} x \ln x$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 0} \frac{3x + 5}{2x +1}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 0} \sin x \ln x$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 0} \frac{\sin x}{x}$
+		      \vspace{5cm}
+		\item $\displaystyle \lim_{x \to 0} \frac{1 - \cos x}{x}$
+		      \vspace{5cm}
+	\end{enumerate}
+\end{question}
+\end{document}
