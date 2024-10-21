@@ -1,0 +1,79 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 13}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section*{Optimization}
+
+
+\begin{theorem}[First derivative test]
+	Suppose that $f$ is a continuous function over an interval $I$ containing a critical point \( c \). If \( f \) is differentiable over \( I \), except possibly at point \( c \), then \( f(c) \) satisfies one of the following descriptions:
+
+	\begin{enumerate}
+		\item If \( f' \) changes sign from positive when \( x < c \) to negative when \( x > c \), then \( f(c) \) is a local maximum of \( f \).
+		\item If \( f' \) changes sign from negative when \( x < c \) to positive when \( x > c \), then \( f(c) \) is a local minimum of \( f \).
+		\item If \( f' \) has the same sign for \( x < c \) and \( x > c \), then \( f(c) \) is neither a local maximum nor a local minimum of \( f \).
+	\end{enumerate}
+\end{theorem}
+
+\begin{theorem}[Closed interval method]
+	To find the absolute extrema of a continuous function $f$ on a closed interval $[a,b]$ we follow the
+	following steps:
+	\begin{enumerate}
+		\item Find the critical points and the values of $f$ at those points
+		\item Find the values of $f$ at the end points
+		\item Compare all the values from the above steps to find absolute max/min
+	\end{enumerate}
+
+\end{theorem}
+
+\begin{definition}
+	Let $f$ be a function that is differentiable over an interval $I$.
+	If $f'$ is increasing over $I$, we say $f$ is concave up.
+	If $f'$ is decreasing over $I$, we say $f$ is concave down.
+	The point where $f$ changes concavity is called inflection point.
+\end{definition}
+
+\begin{theorem}
+	Let $f$ be a function that is twice differentiable over an interval $I$.
+	\begin{enumerate}
+		\item If $f''(x) > 0$, then $f$ is concave up.
+		\item If $f''(x) < 0$, then $f$ is concave down.
+	\end{enumerate}
+\end{theorem}
+
+
+\begin{theorem}[Second derivative test]
+	Suppose $f'(c) = 0$ and $f''$ is continuous over an interval $I$ containing $c$.
+	\begin{enumerate}
+		\item If $f''(c)>0$, then $f$ has a local minimum at $c$.
+		\item If $f''(c)<0$, then $f$ has a local maximum at $c$.
+		\item If $f''(c)=0$, the test is inconclusive.
+	\end{enumerate}
+\end{theorem}
+
+\end{document}
