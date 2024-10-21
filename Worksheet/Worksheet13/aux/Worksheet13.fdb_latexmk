@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber aux/Worksheet13"] 1729498256 "aux/Worksheet13.bcf" "aux/Worksheet13.bbl" "aux/Worksheet13" 1729498256 0
-  "aux/Worksheet13.bcf" 1729489319 107452 677bdc3cbeb1e063528ef039aeca71a3 "pdflatex"
+["biber aux/Worksheet13"] 1729499390 "aux/Worksheet13.bcf" "aux/Worksheet13.bbl" "aux/Worksheet13" 1729499390 0
+  "aux/Worksheet13.bcf" 1729499322 107452 677bdc3cbeb1e063528ef039aeca71a3 "pdflatex"
   "bibliography.bib" 0 -1 0 ""
   (generated)
   "aux/Worksheet13.bbl"
   "aux/Worksheet13.blg"
   (rewritten before read)
-["pdflatex"] 1729489318 "Worksheet13.tex" "Worksheet13.pdf" "Worksheet13" 1729498256 0
+["pdflatex"] 1729499320 "Worksheet13.tex" "Worksheet13.pdf" "Worksheet13" 1729499390 0
   "../marktext.sty" 1724825135 6164 fc189a847afe57b4afab4fd3a388a28c ""
   "../svmacro.sty" 1724825135 10826 58dc328ccc369e0b7590dc9a51643ddd ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
@@ -23,6 +23,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm" 1254269338 12088 d750ac78274fa7c9f73ba09914c04f8a ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm" 1254269338 17180 a5723008921cdcb0c5f4ebe997919b73 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm" 1254269338 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm" 1254269338 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm" 1254269338 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
@@ -62,12 +63,15 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm" 1229303445 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 1229303445 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb" 1255129361 116908 1fca96723793882c2e0160350c192fc8 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb" 1255129361 112766 bdd4fa8b13a0d7dd137624085bd31d40 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb" 1254269338 30696 2654571912f9cd384da9f7cb8a60c568 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1255129361 119235 f35b44530a1d90eb90fe15d9cba67ea0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1255129361 113634 f99c44d58bae0863375faf0e1d74d612 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb" 1255129361 122174 a7a08406857c9530a0320a2517f60370 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb" 1255129361 121065 50bbfa703ce7e11638752ef5a6d120c7 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb" 1255129361 112593 fda2373ba4420af33949610de4c28fe8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb" 1255129361 109265 32320cb6133d4d76bf83e27b5eb4009b ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb" 1254269338 27863 09ce3735688ffde955e72da27c95b61a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy8.pfb" 1254269338 27802 5c876bb2c4040caaf035d60bd74a86bd ""
   "/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -246,11 +250,11 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1686223737 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1686223718 7883462 1a8fb0f02fac2fe5f797dc5da193bacd ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Worksheet13.tex" 1729489317 2685 080adfe4366e382d94455094124b14f2 ""
-  "aux/Worksheet13.aux" 1729489319 897 ace4b553c4a1a87c0f2ee7023293f630 "pdflatex"
+  "Worksheet13.tex" 1729499318 4204 efe684aa7c389abbdbd157833f849c4f ""
+  "aux/Worksheet13.aux" 1729499322 897 39764165b29783f121cbbb9a3313649d "pdflatex"
   "aux/Worksheet13.bbl" 0 -1 0 "biber aux/Worksheet13"
-  "aux/Worksheet13.out" 1729489319 104 c2e020f217375c3b0acd6140616bc0ee "pdflatex"
-  "aux/Worksheet13.run.xml" 1729489319 2362 e93fa82937c2df11aca36097553857bc "pdflatex"
+  "aux/Worksheet13.out" 1729499322 104 c2e020f217375c3b0acd6140616bc0ee "pdflatex"
+  "aux/Worksheet13.run.xml" 1729499322 2362 e93fa82937c2df11aca36097553857bc "pdflatex"
   (generated)
   "Worksheet13.pdf"
   "aux/Worksheet13.aux"
