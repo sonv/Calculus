@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'aux/mini2-b.blg'
+[28] biber-darwin:340> INFO - === Wed Oct  2, 2024, 13:35:46
+[35] Biber.pm:419> INFO - Reading 'aux/mini2-b.bcf'
+[67] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[76] bbl.pm:660> INFO - Writing 'aux/mini2-b.bbl' with encoding 'UTF-8'
+[76] bbl.pm:763> INFO - Output to aux/mini2-b.bbl
+[76] Biber.pm:131> WARN - The file 'aux/mini2-b.bcf' does not contain any citations!
+[76] Biber.pm:133> INFO - WARNINGS: 1
