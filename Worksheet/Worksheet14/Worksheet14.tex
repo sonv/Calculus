@@ -1,0 +1,107 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 14}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section*{Antiderivative}
+
+\begin{definition}
+	A function $F$ is an \emph{antiderivative} of the function $f$ if
+	\begin{equation*}
+		F'(x) = f(x)
+	\end{equation*}
+	for all $x$ in the domain of $f$.
+\end{definition}
+
+\begin{theorem}
+	Let $F$ be an antiderivative of $f$ over an interval $I$.
+	Then, $F(x) + C$ is also an antiderivative of $f$.
+\end{theorem}
+
+
+\begin{problem}
+Find the antiderivatives of the following:
+\begin{enumerate}
+	\item $f(x) = 3x^2$
+	      \vspace{3cm}
+	\item $f(x) = \frac{1}{x}$
+	      \vspace{3cm}
+	\item $f(x) = \cos x$
+	      \vspace{3cm}
+	\item $f(x) = e^x $
+	      \vspace{3cm}
+\end{enumerate}
+\end{problem}
+
+
+\begin{definition}
+	Given a function $f$, the \emph{indefinite integral} of $f$, denoted by
+	\begin{equation*}
+		\int f(x) \, dx \,,
+	\end{equation*}
+	is the most general antiderivative of $f$.
+	The expression $f(x)$ is called the \emph{integrand} and $x$ is called
+	the variable of integration.
+\end{definition}
+
+\begin{problem}
+Verify that $F(x)$ is an antiderivative of $f(x)$.
+\begin{enumerate}
+	\item $F(x) = 5x^3 +2x^2 + 3x + 1$, $f(x) = 15x^2 + 4x +3$
+	      \vspace{5cm}
+	\item $F(x) = x^2 + 4x +1$, $f(x) = 2x + 4$
+	      \vspace{5cm}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Find an antiderivative of the following functions
+\begin{enumerate}
+	\item $f(x) = \frac{1}{x} + x$
+	      \vspace{3cm}
+	\item $f(x) = e^x -3x^2 + \sin x$
+	      \vspace{3cm}
+	\item $f(x) = 2\sin(x) + \sin(2x)$
+	      \vspace{3cm}
+	\item $f(x) = \frac{1}{2} e^{-4x} + \sin x$
+	      \vspace{3cm}
+	\item $f(x) = \tan x \cos x$
+	      \vspace{3cm}
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+We now have the language to discuss about differential equations.
+The first problem that everyone learns in differential equations is the
+so-called \emph{Initial Value Problem}.
+
+\url{https://youtu.be/p_di4Zn4wz4?si=l-eqAJCQSLXFJGb5}
+\end{problem}
+
+
+\end{document}
