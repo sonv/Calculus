@@ -1,0 +1,100 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 14}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section*{Integration}
+
+\begin{definition}
+	The sigma notation:
+	\begin{equation*}
+		\sum_{i=1}^n f_i = f_1 + f_2 + \dots + f_n \,.
+	\end{equation*}
+\end{definition}
+
+\begin{problem}
+Show that
+\begin{enumerate}
+	\item $\displaystyle \sum_{i=1}^n f_i + \sum_{i=1}^n g_i = \sum_{i=1}^n (f_i + g_i) \,.$
+	      \vspace{7cm}
+	\item $\displaystyle  \sum_{i=1}^n c f_i = c \sum_{i=1}^n f_i \,.$
+	      \vspace{7cm}
+\end{enumerate}
+\end{problem}
+
+\begin{definition}
+	A set of points \( P = \{ x_i \} \) for \( i = 0, 1, 2, \dots, n \) with \( a = x_0 < x_1 < x_2 < \cdots < x_n = b \), which divides the interval \( [a, b] \) into subintervals of the form \( [x_0, x_1] , [x_1, x_2] , \dots, [x_{n-1}, x_n] \) is called a \textit{partition} of \( [a, b] \). If the subintervals all have the same width, the set of points forms a \textit{regular partition} of the interval \( [a, b] \).
+\end{definition}
+
+\begin{problem}[Rules]
+Read Left-endpoint and Right-endpoint rules from Section 5.1.
+
+Use both left-endpoint and right-endpoint approximations to approximate the area under the curve of \( f(x) = x^2 \) on the interval \( [0, 2] \); use \( n = 4 \).
+\vspace{5cm}
+\end{problem}
+
+\begin{problem}
+Continue Problem 2. Use excel or a programming language to see the trend of
+\begin{equation*}
+	| L_n - R_n |
+\end{equation*}
+for $n = 3,4,5,\dots, 100$.
+\vspace{7cm}
+\end{problem}
+
+\begin{problem}
+Compute:
+\begin{enumerate}
+	\item $L_4$ for $f(x) =  1/(x-1)$ on $[2,3]$
+	      \vspace{7cm}
+	\item $L_8$ for $f(x) =  x^2 - 2x + 1$ on $[0,2]$
+	      \vspace{7cm}
+\end{enumerate}
+\end{problem}
+
+\begin{definition}
+	Let $f(x)$ be defined on a closed interval $[a,b]$ and let $P$ be a regular partition of $[a,b]$. Let $\Delta x$ be the width of each subinterval $[x_{i-1}, x_i]$ and for each $i$, let $x_i^*$ be any point in $[x_{i-1}, x_i]$. A Riemann sum is defined for $f(x)$ as
+	\[\sum_{i=1}^n f(x_i^*)\Delta x.\]
+\end{definition}
+
+Recall that with the left- and right-endpoint approximations, the estimates seem to get better and better as $n$ get larger and larger. The same thing happens with Riemann sums. Riemann sums give better approximations for larger values of $n$. We are now ready to define the area under a curve in terms of Riemann sums.
+
+\begin{definition}
+	Let $f(x)$ be a continuous, nonnegative function on an interval $[a,b]$, and let $\sum_{i=1}^n f(x_i^*)\Delta x$ be a Riemann sum for $f(x)$. Then, the area under the curve $y=f(x)$ on $[a,b]$ is given by
+	\[A = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*)\Delta x.\]
+\end{definition}
+
+
+If we want an overestimate, for example, we can choose $\{x_i^*\}$ such that for $i = 1,2,3,\ldots,n$, $f(x_i^*) \geq f(x)$ for all $x \in [x_{i-1}, x_i]$. In other words, we choose $\{x_i^*\}$ so that for $i = 1,2,3,\ldots,n$, $f(x_i^*)$ is the maximum function value on the interval $[x_{i-1}, x_i]$. If we select $\{x_i^*\}$ in this way, then the Riemann sum $\sum_{i=1}^n f(x_i^*)\Delta x$ is called an \textbf{upper sum}. Similarly, if we want an underestimate, we can choose $\{x_i^*\}$ so that for $i = 1,2,3,\ldots,n$, $f(x_i^*)$ is the minimum function value on the interval $[x_{i-1}, x_i]$. In this case, the associated Riemann sum is called a \textbf{lower sum}. Note that if $f(x)$ is either increasing or decreasing throughout the interval $[a,b]$, then the maximum and minimum values of the function occur at the endpoints of the subintervals, so the upper and lower sums are just the same as the left- and right-endpoint approximations.
+
+\begin{problem}[Finding Lower and Upper Sums]
+Find a lower sum for $f(x) = 10-x^2$ on $[1,2]$; let $n = 4$ subintervals.
+\vspace{7cm}
+\end{problem}
+
+
+\end{document}
