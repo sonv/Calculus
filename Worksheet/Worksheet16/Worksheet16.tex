@@ -1,0 +1,109 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 14}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Definite Integral}
+
+
+\begin{definition}
+	If \( f(x) \) is a function defined on an interval \([a, b]\), the \textbf{definite integral} of \( f \) from \( a \) to \( b \) is given by
+	\[
+		\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \, \Delta x,
+	\]
+	provided the limit exists. If this limit exists, the function \( f(x) \) is said to be integrable on \([a, b]\), or is an \textbf{integrable function}.
+\end{definition}
+
+\begin{problem}
+Evaluate the integral using definition of definite integral
+\begin{enumerate}
+	\item \begin{equation*}
+		      \int_0^3 x^2 \, dx \,.
+	      \end{equation*}
+	      \newpage
+	\item \begin{equation*}
+		      \int_{-3}^3 x \, dx \,.
+	      \end{equation*}
+	      \vspace{8cm}
+\end{enumerate}
+\end{problem}
+
+\begin{problem}
+Using Geometric Formula to calculate the following integrals:
+\begin{enumerate}
+	\item $$ \int_3^6 \sqrt{ 9 - (x-3)^2} \, dx$$
+	      \vspace{5cm}
+	\item $$ \int_0^2 \sqrt{2x - x^2} \, dx + \int_2^6 \sqrt{ -12 + 8x - x^2} \, dx + \int_6^{12} \sqrt{-72 + 18x -x^2} \, dx$$
+	      \vspace{5cm}
+	\item $$ \int_0^2 \left( 1 - | x -1 | \right) \, dx$$
+	      \vspace{5cm}
+\end{enumerate}
+\end{problem}
+
+\begin{proposition}
+	Properties of Definite Integral.
+	\begin{enumerate}
+		\item
+		      \[
+			      \int_a^a f(x) \, dx = 0
+		      \]
+		      If the limits of integration are the same, the integral is just a line and contains no area.
+
+		\item
+		      \[
+			      \int_b^a f(x) \, dx = -\int_a^b f(x) \, dx
+		      \]
+		      If the limits are reversed, then place a negative sign in front of the integral.
+
+		\item
+		      \[
+			      \int_a^b \left[f(x) + g(x)\right] \, dx = \int_a^b f(x) \, dx + \int_a^b g(x) \, dx
+		      \]
+		      The integral of a sum is the sum of the integrals.
+
+		\item
+		      \[
+			      \int_a^b \left[f(x) - g(x)\right] \, dx = \int_a^b f(x) \, dx - \int_a^b g(x) \, dx
+		      \]
+		      The integral of a difference is the difference of the integrals.
+
+		\item
+		      \[
+			      \int_a^b c f(x) \, dx = c \int_a^b f(x) \, dx
+		      \]
+		      for constant \( c \). The integral of the product of a constant and a function is equal to the constant multiplied by the integral of the function.
+
+		\item
+		      \[
+			      \int_a^b f(x) \, dx = \int_a^c f(x) \, dx + \int_c^b f(x) \, dx
+		      \]
+		      Although this formula normally applies when \( c \) is between \( a \) and \( b \), the formula holds for all values of \( a \), \( b \), and \( c \), provided \( f(x) \) is integrable on the largest interval.
+	\end{enumerate}
+\end{proposition}
+
+
+
+\end{document}
