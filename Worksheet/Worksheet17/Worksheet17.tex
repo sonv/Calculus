@@ -1,0 +1,136 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 14}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Mean Value Theorem}
+
+\begin{theorem}
+	If $f(x)$ is continuous over interval $[a,b]$, then there is at least one point $c \in [a,b]$
+	such that
+	\begin{equation*}
+		f(c) = \frac{1}{b-a} \int_a^b f(x) \, dx  \,.
+	\end{equation*}
+\end{theorem}
+
+
+\begin{problem}
+True or False.
+If $f$ is continuous over $[a,b]$ and is not equal to a constant,
+there is at least one point $M \in [a,b]$ such that
+$f(M) > \frac{1}{b-a} \int_a^b f(t) \, dt $
+and at least one point $m\in [a,b]$ such that
+$f(m) < \frac{1}{b-a} \int_a^b f(t) \, dt$.
+\end{problem}
+\vspace{11cm}
+
+\begin{problem}
+Fidn the average value of the function $f(x) = 8 - 2x$ over
+the interval $[0,4]$ and find $c$
+such that $f(c)$ equals to the average of the function over $[0,4]$.
+\end{problem}
+\vspace{7cm}
+
+\begin{problem}
+Given $\int_0^3 (2x^2 -1) \, dx = 15$, find $c$ such that $f(c)$ equals to the average
+value of $f(x) = 2x^2 -1$ over $[0,3]$.
+\end{problem}
+\vspace{7cm}
+
+
+\begin{theorem}[Fundamental Theorem of Calculus, Part 1]
+	If $f(x)$ is continuous over an interval $[a,b]$, and the function
+	$F(x)$ is defined by
+	\begin{equation*}
+		F(x) = \int_a^x f(t) \, dt ,,
+	\end{equation*}
+	then $F'(x) = f(x)$ over $[a,b]$.
+\end{theorem}
+
+\begin{problem}
+Evaluate the following:
+\begin{enumerate}
+	\item
+	      \[
+		      \frac{d}{dx} \int_1^x e^{-t^2} \, dt
+	      \]
+	      \vspace{5cm}
+
+	\item
+	      \[
+		      \frac{d}{dx} \int_1^x e^{\cos t} \, dt
+	      \]
+	      \vspace{5cm}
+
+	\item
+	      \[
+		      \frac{d}{dx} \int_3^x \sqrt{9 - y^2} \, dy
+	      \]
+	      \vspace{5cm}
+
+	\item
+	      \[
+		      \frac{d}{dx} \int_3^x \frac{ds}{\sqrt{16 - s^2}}
+	      \]
+	      \vspace{5cm}
+
+	\item
+	      \[
+		      \frac{d}{dx} \int_x^{2x} t \, dt
+	      \]
+	      \vspace{5cm}
+\end{enumerate}
+
+
+\end{problem}
+
+\begin{theorem}[Fundamental Theorem of Calculus, Part 2]
+	If $f$ is continuous over the interval $[a,b]$ and
+	$F(x)$ is any antiderivative of $f(x)$, then
+	\begin{equation*}
+		\int_a^b f(x) \, dx = F(b) - F(a) \,.
+	\end{equation*}
+
+\end{theorem}
+
+\begin{problem}[name of the problem]
+In the following exercises, identify the roots of the integrand to remove absolute values, then evaluate using the Fundamental Theorem of Calculus, Part 2.
+
+\begin{enumerate}
+	\item \[ \int_{-2}^{3} |x| \, dx \]
+	      \vspace{5cm}
+	\item \[ \int_{-2}^{4} |t^2 - 2t - 3| \, dt \]
+	      \vspace{5cm}
+	\item \[ \int_{0}^{\pi} |\cos t| \, dt \]
+	      \vspace{5cm}
+	\item \[ \int_{-2}^{4} |t^2 - 2t - 3| \, dt \]
+	      \vspace{5cm}
+	\item \[ \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} |\sin t| \, dt \]
+	      \vspace{5cm}
+\end{enumerate}
+\end{problem}
+
+\end{document}
