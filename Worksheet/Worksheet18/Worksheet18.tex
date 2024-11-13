@@ -1,0 +1,156 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 17}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Integration techniques}
+
+\subsection*{Integration by Parts}
+
+\begin{enumerate}
+	\item Indefinite integration by parts is given by the the following formula:
+	      \begin{equation*}
+		      \int u(x)v'(x) \, dx = u(x)v(x) - \int u'(x) v(x) \, dx \,.
+	      \end{equation*}
+
+	\item Definite integration by parts is given by the following formula:
+	      \begin{equation*}
+		      \int_a^b u(x)v'(x) \, dx = u(x)v(x)\big\rvert_a^b  - \int_a^b u'(x) v(x) \, dx \,.
+	      \end{equation*}
+\end{enumerate}
+Here,
+\begin{equation*}
+	f(x) \big\rvert_a^b = f(b) - f(a) \,.
+\end{equation*}
+
+\begin{example}
+	Evaluate:
+	\begin{enumerate}
+		\item
+		      \begin{equation*}
+			      \int x \cos x  \, dx
+		      \end{equation*}
+		      \vspace{5cm}
+		\item
+		      \begin{equation*}
+			      \int t^2 e^t  \, dt
+		      \end{equation*}
+		      \vspace{5cm}
+	\end{enumerate}
+\end{example}
+\begin{problem}
+Evaluate:
+\begin{enumerate}
+	\item
+	      \begin{equation*}
+		      \int t^2 \sin (\beta t) \, dt
+	      \end{equation*}
+	      \vspace{5cm}
+	\item
+	      \begin{equation*}
+		      \int \ln \sqrt{x} \, dx
+	      \end{equation*}
+	      \vspace{5cm}
+	\item
+	      \begin{equation*}
+		      \int \tan^{-1} (2y) \, dy
+	      \end{equation*}
+	      \vspace{5cm}
+	\item
+	      \begin{equation*}
+		      \int (\ln x)^2 \, dx
+	      \end{equation*}
+	      \vspace{5cm}
+	\item
+	      \begin{equation*}
+		      \int e^{2\theta} \sin (3\theta) \, d\theta
+	      \end{equation*}
+	      \vspace{5cm}
+	\item
+	      \begin{equation*}
+		      \int_0^{1/2} x \cos(\pi x) \, dx
+	      \end{equation*}
+	      \vspace{5cm}
+	\item
+	      \begin{equation*}
+		      \int_1^5 \frac{\ln R}{R^2} \, dR
+	      \end{equation*}
+	      \vspace{5cm}
+\end{enumerate}
+\end{problem}
+
+
+\subsection*{Integration by Substitution}
+Let $u = g(x)$. Then,
+\begin{equation*}
+	\int f(g(x)) g'(x) \, dx = \int f(u) \, du \,,
+\end{equation*}
+and
+\begin{equation*}
+	\int_a^b f(g(x)) g'(x) \, dx = \int_{g(a)}^{g(b)} f(u) \, du \,.
+\end{equation*}
+
+\begin{example}
+	Evaluate:
+	\begin{enumerate}
+		\item
+		      \begin{equation*}
+			      \int \cos x \sin x \, dx
+		      \end{equation*}
+		      \vspace{5cm}
+		\item
+		      \begin{equation*}
+			      \int_0^1 x e^{4x^2 + 3} \, dx
+		      \end{equation*}
+		      \vspace{5cm}
+
+	\end{enumerate}
+\end{example}
+
+\begin{problem}
+Evaluate:
+\begin{enumerate}
+	\item \( \displaystyle \int \frac{e^u}{(1 - e^u)^2} \, du \)
+	      \vspace{5cm}
+	\item \( \displaystyle \int \frac{a + bx^2}{\sqrt{3ax + bx^3}} \, dx \)
+	      \vspace{5cm}
+	\item \( \displaystyle \int \frac{(\ln x)^2}{x} \, dx \)
+	      \vspace{5cm}
+	\item \( \displaystyle \int \sec^2 \theta \tan^3 \theta \, d\theta \)
+	      \vspace{5cm}
+	\item \( \displaystyle \int e^x \sqrt{1 + e^x} \, dx \)
+	      \vspace{5cm}
+	\item \( \displaystyle \int \frac{\sin \sqrt{x}}{\sqrt{x}} \, dx \)
+	      \vspace{5cm}
+	\item \( \displaystyle \int \frac{z^2}{z^3 + 1} \, dz \)
+	      \vspace{5cm}
+	\item \( \displaystyle \int \sin x \sin(\cos x) \, dx \)
+	      \vspace{5cm}
+	\item \( \displaystyle \int x \sqrt{x + 2} \, dx \)
+	      \vspace{5cm}
+\end{enumerate}
+\end{problem}
+
+\end{document}
