@@ -1,0 +1,66 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage[draft]{../marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage[draft]{../svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Worksheet 19}
+\author{MATH 101}
+\address{Fulbright University, Ho Chi Minh City, Vietnam}
+
+%\author{Co-author}
+%\address{  }
+%\email {  }
+%
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{problem}
+Evaluate:
+
+\begin{enumerate}
+	\item $$\int_0^1 \ln x \, dx$$
+	      \vspace{7cm}
+	\item $$ \int_0^{\pi/2} \frac{\sin x}{1 + \cos x} \, dx $$
+	      \vspace{7cm}
+	\item $$ \int_{\pi/4}^{\pi/3} \cot x \, dx $$
+	      \vspace{7cm}
+	\item $$ \int_{0}^{\pi/3} \frac{ \sin x - \cos x}{ \sin x + \cos x} \, dx $$
+	      \vspace{7cm}
+	\item $$ \int \ln (x) \frac{ \sqrt{1 - (\ln x)^2 }}{x} \, dx $$
+	      \vspace{7cm}
+	\item $$ \int_{-1}^1 x \cos x \, dx $$
+	      \vspace{7cm}
+	\item $$ \int e^x \sin x \, dx $$
+	      \vspace{7cm}
+	\item $$ \int \cos \theta ( 1 - \cos \theta )^{99} \sin \theta \, d\theta $$
+	      \vspace{7cm}
+\end{enumerate}
+\end{problem}
+
+
+\begin{problem}
+Determine the area between two curves
+\begin{enumerate}
+	\item $ y = x^2 - 3$ and $y =1$
+	      \vspace{7cm}
+	\item $ y = x^2$ and $y = 3x + 4$
+	      \vspace{7cm}
+	\item $ x = y^2$ and $x = 9$
+	      \vspace{7cm}
+	\item $ y = x$ and $y =\sqrt{x}$
+	      \vspace{7cm}
+\end{enumerate}
+\end{problem}
+
+\end{document}
