@@ -1,0 +1,59 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Calculus }
+\author{  Mini Exam 4  \\ \vspace{1cm} Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+\\ \vspace{1cm} ID: \_\_\_\_\_\_\_\_\_ \\ \vspace{1cm} Score: \_\_\_\_\_\_/ 80}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+RULES:
+\begin{itemize}
+	\item You have 30 minutes to complete the exam.
+	\item There are 8 questions and 80 points in total.
+	\item You can use a non-graphing calculator.
+	\item If you need to go to the restroom, please turn in your cellphone before.
+	\item If you need hints, 1 hint is worth 3 points.
+\end{itemize}
+
+\newpage
+
+
+Evaluate the following. Use any knowledge you have gained to do. One problem may have many approaches, some shorter than others.
+\begin{enumerate}
+	\item $$\frac{d}{dx} \int_0^{x^2} \cos\left( t^2 - e^{-t^2} \right) \, dt$$
+	      \vspace{7cm}
+	\item $$ \frac{d}{dx} \left( e^x \int_0^{2x} t^2 \, dt  \right) $$
+	      \newpage
+	\item $$ \frac{d}{dx}  \sin\left( \int_0^{\sqrt{x}} t^2 \, dt  \right)  $$
+	      \vspace{8cm}
+	\item $$\int \sin^7 (\theta) \cos (\theta) \, d\theta$$
+	      \newpage
+	      %\item $$\int \frac{x}{\sqrt{1 - 4x^2} } \, dx$$
+	\item $$ \int_0^\infty x e^{-x^2} \, dx $$
+	      \vspace{8cm}
+	\item $$ \int x e^x \, dx $$
+	      \newpage
+	\item $$ \int e^x \sin x \, dx $$
+	      \vspace{8cm}
+	\item $$ \int_0^{2}  \left( 1 - \left| x - 1   \right|  \right)  \, dx + \int_2^6 \sqrt{-12 + 8x -x^2}   \, dx $$
+	      \vspace{7cm}
+\end{enumerate}
+
+
+\end{document}
