@@ -1,0 +1,119 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsaddr}
+\usepackage{marktext} 
+%% Remove draft for real article, put twocolumn for two columns
+\usepackage{svmacro}
+\usepackage[utf8]{inputenc}
+\usepackage[style=alphabetic, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+%% commentary bubble
+\newcommand{\SV}[2][]{\sidenote[colback=green!10]{\textbf{SV\xspace #1:} #2}}
+
+%% Title 
+\title{ Calculus }
+\author{  Final A \\ \vspace{1cm} Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+\\ \vspace{1cm} ID: \_\_\_\_\_\_\_\_\_ \\ \vspace{1cm} Score: \_\_\_\_\_\_/ 100}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+RULES:
+\begin{itemize}
+	\item You have 80 minutes to complete the exam.
+	\item There are 5 questions and 100 points in total.
+	\item You can use a non-graphing calculator.
+	\item If you need to go to the restroom, please turn in your cellphone before.
+	\item If you need hints, 1 hint is worth 3 points.
+\end{itemize}
+
+\newpage
+
+\begin{problem}[20 points]
+State definitions or theorems.
+
+\begin{enumerate}
+	\item Give definition for a function $f$ being differentiable at a point $x=a$.
+	      \vspace{9cm}
+	\item What is the intermediate value theorem?
+	      \vspace{9cm}
+
+	      \newpage
+	\item What is the antiderivative of a function $f(x)$?
+	      \vspace{9cm}
+
+	\item What is the mean value theorem?
+	      \vspace{9cm}
+
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+\begin{problem}[20 points]
+Compute the following:
+
+\begin{enumerate}
+	\item $$ \lim_{x \to 1} \frac{ e^{x-1} - 1}{x^3 - 1} $$
+	      \vspace{8cm}
+	\item $$ \frac{d}{dx} \left( e^{e^x} \sin(x)  \right)$$
+	      \vspace{8cm}
+	\item $$ \int ( e^2 - 3x^5 ) \, dx $$
+	      \vspace{8cm}
+
+	\item $$\int  \sin(x^2) x \, dx $$
+	      \vspace{8cm}
+
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+\begin{problem}[20 points]
+\begin{enumerate}
+	\item What is the quotient rule?
+	      \vspace{5cm}
+	\item Derrive the quotient rule from definition.
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+\begin{problem}[20 points]
+Find the volume of the conical frustrum of height 5, the radius of the base is 10,
+and the radius on the top is 5.
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=0.3\textwidth]{CroppedCone.svg.png}
+	\end{center}
+\end{figure}
+
+
+\end{problem}
+
+\newpage
+
+\begin{problem}[20 points]
+You own a TV company.
+Let \( p(x) \) be the price per unit that the company can charge if it sells \( x \) units. Then \( p \) is called the \textbf{demand function} (or \textbf{price function}) and we would expect it to be a decreasing function of \( x \). (More units sold corresponds to a lower price.)
+
+If \( x \) units are sold and the price per unit is \( p(x) \), then the total revenue is
+
+\[
+	R(x) = x \cdot p(x)
+\]
+
+where \( R(x) \) is called the \textbf{revenue function}.
+
+A store has been selling 200 flat-screen TVs a week at \$350 each. A market survey indicates that for each \$10 rebate offered to buyers, the number of TVs sold will increase by 20 a week.
+
+Find the demand function and the revenue function. How large a rebate should the store offer to maximize its revenue?
+
+\end{problem}
+
+
+\end{document}
