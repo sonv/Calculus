@@ -1,0 +1,9 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'aux/final-b.blg'
+[28] biber-darwin:340> INFO - === Wed Dec 11, 2024, 12:28:28
+[36] Biber.pm:419> INFO - Reading 'aux/final-b.bcf'
+[68] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[75] bbl.pm:660> INFO - Writing 'aux/final-b.bbl' with encoding 'UTF-8'
+[75] bbl.pm:763> INFO - Output to aux/final-b.bbl
+[75] Biber.pm:131> WARN - The file 'aux/final-b.bcf' does not contain any citations!
+[75] Biber.pm:133> INFO - WARNINGS: 1

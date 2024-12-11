@@ -1,0 +1,17 @@
+\contentsline {subsection}{Key info}{1}{section*.3}%
+\contentsline {subsection}{Important dates}{1}{section*.4}%
+\contentsline {subsection}{Textbook(s) and References}{2}{section*.5}%
+\contentsline {subsection}{Course description}{2}{section*.6}%
+\contentsline {subsection}{Syllabus \& Schedule}{2}{section*.7}%
+\contentsline {subsection}{Class Policies (subject to change)}{4}{section*.8}%
+\contentsline {subsubsection}{Lectures}{4}{section*.9}%
+\contentsline {subsubsection}{Attendance}{4}{section*.10}%
+\contentsline {subsubsection}{Homework}{4}{section*.11}%
+\contentsline {subsubsection}{Grading (subject to change)}{5}{section*.12}%
+\contentsline {subsection}{Time Expectations}{5}{section*.13}%
+\contentsline {subsection}{Academic Dishonesty}{5}{section*.14}%
+\contentsline {subsection}{Learning Support}{5}{section*.15}%
+\contentsline {subsection}{Wellness Center}{6}{section*.16}%
+\contentsline {subsection}{Counseling service}{6}{section*.17}%
+\contentsline {subsection}{Safe Learning Environment\,}{6}{section*.18}%
+\contentsline {subsection}{Accessibility Learning Service}{6}{section*.19}%
